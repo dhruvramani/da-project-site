@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research Experiment Summary</title>
+    <title>&#128185; Exchange Rate Analysis</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.1/dist/tailwind.min.css" rel="stylesheet">
     <style>
         html {
@@ -16,7 +16,7 @@
     <!-- Menu Bar -->
     <nav class="bg-red-500 text-white p-4 sticky top-0">
         <div class="container mx-auto flex justify-between">
-            <span class="font-semibold text-xl">Project Title</span>
+            <span class="font-semibold text-xl">&#128185; Exchange Rate Analysis</span>
             <div>
                 <a href="./index.html" class="px-2 hover:text-red-200">Introduction</a>
                 <a href="./background.html" class="px-2 hover:text-red-200">Background</a>
@@ -31,42 +31,52 @@
         </div>
     </nav>
 
-    <h1></h1>
-    <h1>Findings</h1>
-    <h2>Data Science Questions</h2>
 
-    <ul>
-        <li><b> Q1 - How does the exchange rate correlate with key economic indicators?</b></li>
-        <img src="plots/pair-plots.png" alt="Pair Plots">
+    <div class="container mx-auto">
+    <section class="min-h-screen p-8">
 
-        <p>According to the Phillips curve, there is an inverse relationship between national inflation rates and exchange rates. This relationship occurs because central banks raise interest rates when national inflation is high to cool the economy and reduce inflationary pressures. Conversely, when inflation is low, the central bank may lower interest rates to stimulate economic activity. <b>The exchange rate-CPI link is essential for several reasons</b>. Exchange rates affect import prices, which involves a country's CPI. Currency depreciation can raise import prices and CPI inflation, mainly if a country imports a lot. Furthermore, a country's exchange and CPI inflation rates are usually related. A country with high inflation depreciates its currency compared to one with low inflation. Higher inflation lowers a currency's purchasing power, making it less valuable on the foreign exchange market. If a country has lower inflation than its trading partners, its currency may rise because it retains its purchasing power. Besides, we also can find that international inflation rates are indirectly linked. If U.S. inflation is strong and Japanese inflation is low, trade dynamics may shift. A dollar devaluation against the yen would make U.S. exports more competitive in Japan and make Japanese imports more expensive for Americans. The relative demand for goods from both countries would affect the trade balance and possibly inflation.</p>
+<h1 class="text-3xl font-bold mb-4">Findings</h1>
 
-        <li><b> Q2 - What is the correlation among different features and exchange rate?</b></li>
-            <ul>
-                <li> CPI_US Vs Exchange Rate = -0.8205625181150111 </li>
-                <li> CPI_JP Vs Exchange Rate = -0.9167574337031507  </li>
-                <li> Inflation US Vs Exchange Rate = 0.6063946567452743 </li>
-                <li> Inflation JP Vs Exchange Rate = 0.7524447102385253  </li>
-            </ul>
+<h2 class="text-2xl font-semibold text-red-500 mb-3">Data Science Questions</h2>
 
-        <li><b> Q3 - Which features are more important in predicting the exchange rate?</b></li>
+<ul class="list-disc pl-8">
+    <li class="mb-3">
+        <b class="font-semibold">Q1 - How does the exchange rate correlate with key economic indicators?</b>
+        <img src="plots/pair-plots.png" alt="Pair Plots" class="my-3">
+        <p class="mb-3">According to the Phillips curve, there is an inverse relationship between national inflation rates and exchange rates. This relationship occurs because central banks raise interest rates when national inflation is high to cool the economy and reduce inflationary pressures. Conversely, when inflation is low, the central bank may lower interest rates to stimulate economic activity. <b class="font-semibold">The exchange rate-CPI link is essential for several reasons</b>. Exchange rates affect import prices, which involves a country's CPI. Currency depreciation can raise import prices and CPI inflation, mainly if a country imports a lot. Furthermore, a country's exchange and CPI inflation rates are usually related. A country with high inflation depreciates its currency compared to one with low inflation. Higher inflation lowers a currency's purchasing power, making it less valuable on the foreign exchange market. If a country has lower inflation than its trading partners, its currency may rise because it retains its purchasing power. Besides, we also can find that international inflation rates are indirectly linked. If U.S. inflation is strong and Japanese inflation is low, trade dynamics may shift. A dollar devaluation against the yen would make U.S. exports more competitive in Japan and make Japanese imports more expensive for Americans. The relative demand for goods from both countries would affect the trade balance and possibly inflation.</p>
+    </li>
 
-        <img src="plots/dt_importance.png" alt="Feature Importance">
+    <li class="mb-3">
+        <b class="font-semibold">Q2 - What is the correlation among different features and exchange rate?</b>
+        <ul class="list-disc pl-8 mb-3">
+            <li> CPI_US Vs Exchange Rate = -0.8205625181150111 </li>
+            <li> CPI_JP Vs Exchange Rate = -0.9167574337031507  </li>
+            <li> Inflation US Vs Exchange Rate = 0.6063946567452743 </li>
+            <li> Inflation JP Vs Exchange Rate = 0.7524447102385253  </li>
+        </ul>
+    </li>
 
+    <li class="mb-3">
+        <b class="font-semibold">Q3 - Which features are more important in predicting the exchange rate?</b>
+        <img src="plots/dt_importance.png" alt="Feature Importance" class="my-3">
         <p>Since our dataset contains many attributes, we found it fit to analyze which attributes are actually contributing/supporting our target. We thought that there could be some variables that are hurting the target or not making any difference, so we tried to analyze the importance of every attribute using a decision tree. Initially, there were about 16 attributes, but after doing an analysis on feature importance, we found 6 attributes to be the most important contributor towards the target. The above figure plots the relative feature importance with respect to the features.</p>
+    </li>
 
-        <li><b> Q4 - How volatile is the exchange rate?</b></li>
-
-        <img src="plots/volatile.png" alt="Volatile">
-
+    <li class="mb-3">
+        <b class="font-semibold">Q4 - How volatile is the exchange rate?</b>
+        <img src="plots/volatile.png" alt="Volatile" class="my-3">
         <p>Since we had about 40 years worth of data, it would not be useful to plot every single day's data and analyze it, so we averaged the monthly data and. The blue line in the graph represents the exchange rate of the Japanese (Yen) wrt US (dollar) rate. The red line represents the volatility of the exchange rate (which means the change of exchange rates between a common currency pair within a short period of time). The volatility has been calculated based on standard deviation which is appropriate to find how much fluctuation has happened in the currency rate over every month. Based on analysis, the Yen_dollar pairing has fallen over the years, with its lowest in 2012. Even though its lowest was in 2012, the currency was more or less stable in comparison to the years 1971-1978. The lowest volatility was seen between 1986-1992, which means the currency was most stable during this time period.</p>
+    </li>
 
-        <li> <b>Q5 - What is a good classifier model to predict Exchange rate?</b>
+    <li>
+        <b class="font-semibold">Q5 - What is a good classifier model to predict Exchange rate?</b>
             <img src="plots/logistic.png" alt="Logistic Regression Confusion Matrix">
             <img src="plots/logistic_roc.png" alt=" Logistic Regression ROC Curve">
 
         </li>
     </ul>
+    </section>
+    </div>
 
 </body>
 </html>

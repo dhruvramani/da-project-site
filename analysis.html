@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research Experiment Summary</title>
+    <title>&#128185; Exchange Rate Analysis</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.1/dist/tailwind.min.css" rel="stylesheet">
     <style>
         html {
@@ -17,7 +17,7 @@
     <!-- Menu Bar -->
     <nav class="bg-red-500 text-white p-4 sticky top-0">
         <div class="container mx-auto flex justify-between">
-            <span class="font-semibold text-xl">Project Title</span>
+            <span class="font-semibold text-xl">&#128185; Exchange Rate Analysis</span>
             <div>
                 <a href="./index.html" class="px-2 hover:text-red-200">Introduction</a>
                 <a href="./background.html" class="px-2 hover:text-red-200">Background</a>
@@ -32,20 +32,24 @@
         </div>
     </nav>
 
-    <h1>Descriptive Analysis</h1>
-    <h1>Visualizations</h1> <hr>
+    <div class="container mx-auto">
+    <section class="min-h-screen p-8">
+     <h1 class="text-3xl font-bold mb-4">Descriptive Analysis</h1>
 
-    <h1> V1 - Time Series of Exchange Rate </h1>
-    <img src="plots/timeseries.png" alt="Volatile">
+    <h2 class="text-2xl font-semibold text-red-500 mb-3">Visualizations</h2>
 
-    <h1> V2 - Boxplots</h1>
-    <img src="plots/boxplots.png" alt="Volatile">
+    <h3 class="text-xl font-semibold text-red-400 mb-2">V1 - Time Series of Exchange Rate</h3>
+    <img src="plots/timeseries.png" alt="Time Series of Exchange Rate" class="mb-3">
 
-    <h1>V3 - US Stock market changes over the years for top rated equities.</h1>
+    <h3 class="text-xl font-semibold text-red-400 mb-2">V2 - Boxplots</h3>
+    <img src="plots/boxplots.png" alt="Boxplots" class="mb-3">
+
+    <h3 class="text-xl font-semibold text-red-400 mb-2">V3 - US Stock market changes over the years for top rated equities.</h3>
     <p>The below chart represents candles over 40 years, the red and green color candles have a specific significance wrt the stock market. Below is some general information about the candlesticks (known as Japanese candlesticks) significance for everyone’s
         understanding. </p>
     <p>Japanese candlesticks are a tool to visually represent more data in a price chart by allowing traders to gain knowledge of the open, close, highest and lowest prices of an asset during any given session.</p>
     <img src="plots/candlesticks.png" alt="general information about the candlesticks">
+
     <p>A candlestick is composed of a body, a lower wick and an upper wick, let's discuss each part individually:</p>
     <ul>
         <li><b>Upper wick:</b> the highest price reached during a given session.</li>
@@ -94,14 +98,18 @@
     </p>
     <img src="plots/mean_candles.png" alt="daily candlesticks over 40 years">
 
-    <h1>Hypothesis 1</h1>
+    <h3 class="text-xl font-semibold text-red-400 mb-2">Hypothesis 1</h3>
         <p>The null hypothesis, H0 is that there is no significant difference between means of the two features - CPI US and CPI JP and the alternative hypothesis, H1 is that there is significant different between the means of the two features. The t-statistic, corresponding p-value and degrees of freedom is statistic = 100.14, pvalue = 0.0, df = 21774.0. We are using 0.05 as the significance threshold. Since, the pvalue is less than 0.05, we can reject the null hypothesis and accept the alternative hypothesis. therefore, we can conclude that there is a significant difference in the CPI values of USA and Japan in our dataset.</p>
 
-    <h1>Predictive Analysis</h1>
+    <h3 class="text-xl font-semibold text-red-400 mb-2">Predictive Analysis</h3>
     <b>@DHRUV add the prediction of exchange rate using different models </b>
 
-    <h1>Text Data Analysis</h1>
+    <h3 class="text-xl font-semibold text-red-400 mb-2">Advanced Analysis</h3>
     <b>@Dhruv add the advanced text analysis</b>
+
+
+</section>
+</div>
 
 </body>
 
