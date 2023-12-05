@@ -102,10 +102,11 @@
         <p>The null hypothesis, H0 is that there is no significant difference between means of the two features - CPI US and CPI JP and the alternative hypothesis, H1 is that there is significant different between the means of the two features. The t-statistic, corresponding p-value and degrees of freedom is statistic = 100.14, pvalue = 0.0, df = 21774.0. We are using 0.05 as the significance threshold. Since, the pvalue is less than 0.05, we can reject the null hypothesis and accept the alternative hypothesis. therefore, we can conclude that there is a significant difference in the CPI values of USA and Japan in our dataset.</p>
 
     <h3 class="text-xl font-semibold text-red-400 mb-2">Predictive Analysis</h3>
-    <b>@DHRUV add the prediction of exchange rate using different models </b>
+    <p>We tried to predict the exchange rate between USD and Yen from the economic factors like CPI, Inflation Rate, etc. of both the countries for that date. We tried a couple of predictive models : Linear Regression, Ridge Regression, Lasso Regression, Random Forest Regressor and Gradient Boosting Regressor. For each of these models, we performed hyperparameter search. Among all these, Gradient Boosting Regressor perfomed the best.</p>
+    <img src="plots/GradientBoostingRegressor.png">
 
     <h3 class="text-xl font-semibold text-red-400 mb-2">Advanced Analysis</h3>
-    <b>@Dhruv add the advanced text analysis</b>
+    <p>For advanced analysis, we wanted to find if there exists a correlation between the news, the movement in stock markets and the exchange rates. We used pre-trained transformer models to get the sentiment of the news, labelled as positive or negative. We similarly label the market & exchange rate movements as positive and negative if the rates moved up as compared to the previous day. Hence for all the days when we had news, we compare it with the rate movements for that day. We used Chi Squared test to measure the correlation between these three variables. We got a Chi score of 0.48 for the exchange rate.</p>
 
 
 </section>
