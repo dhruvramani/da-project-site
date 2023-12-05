@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Experiment Summary</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.1/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Menu Bar -->
+    <nav class="bg-red-500 text-white p-4 sticky top-0">
+        <div class="container mx-auto flex justify-between">
+            <span class="font-semibold text-xl">Project Title</span>
+            <div>
+                <a href="#introduction" class="px-2 hover:text-red-200">Introduction</a>
+                <a href="./dataset.html" class="px-2 hover:text-red-200">Data</a>
+                <a href="#analysis" class="px-2 hover:text-red-200">Analysis</a>
+                <a href="#findings" class="px-2 hover:text-red-200">Findings</a>
+                <a href="./limitations.html" class="px-2 hover:text-red-200">Limitations</a>
+                <a href="./ethics.html" class="px-2 hover:text-red-200">Ethics</a>
+                <a href="#conclusions" class="px-2 hover:text-red-200">Conclusions</a>
+                <a href="./future.html" class="px-2 hover:text-red-200">Future Work</a>
+            </div>
+        </div>
+    </nav>
+
+    <h1>US Stock market changes over the years for top rated equities.</h1>
+    <p>The below chart represents candles over 40 years, the red and green color candles have a specific significance wrt the stock market. Below is some general information about the candlesticks (known as Japanese candlesticks) significance for everyone’s
+        understanding. </p>
+    <p>Japanese candlesticks are a tool to visually represent more data in a price chart by allowing traders to gain knowledge of the open, close, highest and lowest prices of an asset during any given session.</p>
+    <img src="plots/candlesticks.png" alt="general information about the candlesticks">
+    <p>A candlestick is composed of a body, a lower wick and an upper wick, let's discuss each part individually:</p>
+    <ul>
+        <li><b>Upper wick:</b> the highest price reached during a given session.</li>
+
+        <li><b>Lower wick:</b> the lowest price reached during a given session.
+        </li>
+
+        <li><b>Body:</b> it shows the open and close price, depending on its color or size can mean different things, let’s look at them:
+            <ul>
+                <li><b>Green:</b> when the close price is higher than the open price.
+                </li>
+                <li><b>Red:</b> when the close price is lower than the open price.
+                </li>
+                <li><b>No color:</b> when the close price is the same as the open price, so the candle has no body at all.
+                </li>
+            </ul>
+        </li>
+
+
+    </ul>
+    <p>
+        Below chart represents daily candlesticks over 40 years</p>
+    <img src="plots/US_candlestick.png" alt="daily candlesticks over 40 years">
+    <p>Below is the close up view over a shorted period of time, in order to represent the candles more clearly and deduce some findings:
+    </p>
+    <p>The candles are between the time period August to September 2023.
+    </p>
+    <p>The first red candle means that the stock market's closing rate (4513) was lower than that day's opening rate (4550). By observing the wick of the candle, the upper wick is missing which means the opening price and the day’s highest price are the
+        same. The lower wick of the candle is present, which presents the day's lowest price (4505). It makes sense that the candle is red because the closing price is lower than the opening price.
+    </p>
+    <p>
+        The next green candle can be analyzed in a similar way, but the entire candle is green because the market closed (4501) at a higher rate as compared to the opening rate (4494). The analysis from this is that, people bought more stocks as compared to selling
+        their existing stocks.
+    </p>
+    <p>The takeaway from this is that trader’s can make decisions about buying or selling their stocks based on the market movement of the candle’s. There are certain patterns that one can look for in order to analyze if the stock market is going to rise
+        or fall. These patterns require domain knowledge about pattern analysis. But these sticks can be used to understand if stock is going to fall (mass selling) or rise (mass buying).
+    </p>
+    <img src="plots/candle_close_up.png" alt="daily candlesticks over 40 years">
+    <p>Below is the candlestick figure for monthly averages.
+    </p>
+    <p>The chart is not meant to be very helpful for trader’s because daily data matters in the stock market, but we wanted to plot this chart and see how was the average performance of the market over the years since we have about 40 years worth of data
+        and the chart with daily data of 40 years was not easy to draw analysis from. Mostly so many years worth of data would be good to analyze using a Machine Learning model or can be analyzed manually for patterns over 10-20 years of past data.
+    </p>
+    <p>Overall the market over the 40 years has been quite good, with the market being down during 1995-1997, 2006-2008, 2012-2014.
+    </p>
+    <p>
+        Based on the Yen-Dollar currency exchange volatility chart and the candlestick chart, the period 2012-2014 seems to have some problems and can be seen with the fall in stock market and 2012 having the lowest exchange rate.
+    </p>
+    <img src="plots/mean_candles.png" alt="daily candlesticks over 40 years">
+
+</body>
+
+</html>
