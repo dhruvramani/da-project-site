@@ -19,19 +19,29 @@
         <div class="container mx-auto flex justify-between">
             <span class="font-semibold text-xl">Project Title</span>
             <div>
-                <a href="#introduction" class="px-2 hover:text-red-200">Introduction</a>
+                <a href="./index.html" class="px-2 hover:text-red-200">Introduction</a>
+                <a href="./background.html" class="px-2 hover:text-red-200">Background</a>
                 <a href="./dataset.html" class="px-2 hover:text-red-200">Data</a>
-                <a href="#analysis" class="px-2 hover:text-red-200">Analysis</a>
-                <a href="#findings" class="px-2 hover:text-red-200">Findings</a>
+                <a href="./analysis.html" class="px-2 hover:text-red-200">Analysis</a>
+                <a href="./findings.html" class="px-2 hover:text-red-200">Findings</a>
                 <a href="./limitations.html" class="px-2 hover:text-red-200">Limitations</a>
                 <a href="./ethics.html" class="px-2 hover:text-red-200">Ethics</a>
-                <a href="#conclusions" class="px-2 hover:text-red-200">Conclusions</a>
+                <a href="./conclusion.html" class="px-2 hover:text-red-200">Conclusions</a>
                 <a href="./future.html" class="px-2 hover:text-red-200">Future Work</a>
             </div>
         </div>
     </nav>
 
-    <h1>US Stock market changes over the years for top rated equities.</h1>
+    <h1>Descriptive Analysis</h1>
+    <h1>Visualizations</h1> <hr>
+
+    <h1> V1 - Time Series of Exchange Rate </h1>
+    <img src="plots/timeseries.png" alt="Volatile">
+
+    <h1> V2 - Boxplots</h1>
+    <img src="plots/boxplots.png" alt="Volatile">
+
+    <h1>V3 - US Stock market changes over the years for top rated equities.</h1>
     <p>The below chart represents candles over 40 years, the red and green color candles have a specific significance wrt the stock market. Below is some general information about the candlesticks (known as Japanese candlesticks) significance for everyone’s
         understanding. </p>
     <p>Japanese candlesticks are a tool to visually represent more data in a price chart by allowing traders to gain knowledge of the open, close, highest and lowest prices of an asset during any given session.</p>
@@ -53,8 +63,6 @@
                 </li>
             </ul>
         </li>
-
-
     </ul>
     <p>
         Below chart represents daily candlesticks over 40 years</p>
@@ -85,6 +93,15 @@
         Based on the Yen-Dollar currency exchange volatility chart and the candlestick chart, the period 2012-2014 seems to have some problems and can be seen with the fall in stock market and 2012 having the lowest exchange rate.
     </p>
     <img src="plots/mean_candles.png" alt="daily candlesticks over 40 years">
+
+    <h1>Hypothesis 1</h1>
+        <p>The null hypothesis, H0 is that there is no significant difference between means of the two features - CPI US and CPI JP and the alternative hypothesis, H1 is that there is significant different between the means of the two features. The t-statistic, corresponding p-value and degrees of freedom is statistic = 100.14, pvalue = 0.0, df = 21774.0. We are using 0.05 as the significance threshold. Since, the pvalue is less than 0.05, we can reject the null hypothesis and accept the alternative hypothesis. therefore, we can conclude that there is a significant difference in the CPI values of USA and Japan in our dataset.</p>
+
+    <h1>Predictive Analysis</h1>
+    <b>@DHRUV add the prediction of exchange rate using different models </b>
+
+    <h1>Text Data Analysis</h1>
+    <b>@Dhruv add the advanced text analysis</b>
 
 </body>
 
