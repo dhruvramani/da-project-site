@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Experiment Summary</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.1/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Menu Bar -->
+    <nav class="bg-red-500 text-white p-4 sticky top-0">
+        <div class="container mx-auto flex justify-between">
+            <span class="font-semibold text-xl">Project Title</span>
+            <div>
+                <a href="#introduction" class="px-2 hover:text-red-200">Introduction</a>
+                <a href="./dataset.html" class="px-2 hover:text-red-200">Data</a>
+                <a href="#analysis" class="px-2 hover:text-red-200">Analysis</a>
+                <a href="#findings" class="px-2 hover:text-red-200">Findings</a>
+                <a href="./limitations.html" class="px-2 hover:text-red-200">Limitations</a>
+                <a href="./ethics.html" class="px-2 hover:text-red-200">Ethics</a>
+                <a href="#conclusions" class="px-2 hover:text-red-200">Conclusions</a>
+                <a href="./future.html" class="px-2 hover:text-red-200">Future Work</a>
+            </div>
+        </div>
+    </nav>
+    <h1>Hypothesis 1</h1>
+    <p>The null hypothesis, H0 is that there is no significant difference between means of the two features - CPI US and CPI JP and the alternative hypothesis, H1 is that there is significant different between the means of the two features. The t-statistic,
+        corresponding p-value and degrees of freedom is statistic = 100.14, pvalue = 0.0, df = 21774.0. We are using 0.05 as the significance threshold. Since, the pvalue is less than 0.05, we can reject the null hypothesis and accept the alternative
+        hypothesis. therefore, we can conclude that there is a significant difference in the CPI values of USA and Japan in our dataset.</p>
+    <h1> Logistic Regression Explanation</h1>
+    <h1>Logistic Regression ROC Curve</h1>
+    <img src="plots/logistic_roc.png" alt=" Logistic Regression ROC Curve">
+    <h1>SVM Confusion Matrix</h1>
+    <img src="plots/svm_cm.png" alt="SVM Confusion Matrix">
+    <h1>Decision Tree Confusion Matrix</h1>
+    <img src="plots/decison_tree_cm.png" alt="Decision Tree Confusion Matrix">
+    <h1>KNN Confusion Matrix</h1>
+    <img src="plots/knn.png" alt="KNN Confusion Matrix">
+    <h1>Naive Bayes Confusion Matrix</h1>
+    <img src="plots/naive_bayes.png" alt=" Naive Bayes Confusion Matrix">
+    <h1>Random Forest Confusion Matrix</h1>
+    <img src="plots/random_forest_cm.png" alt="Random Forest Confusion Matrix">
+    <h1>Logistic Regression Confusion Matrix</h1>
+    <img src="plots/logistic.png" alt="Logistic Regression Confusion Matrix">
+
+
+</body>
+
+</html>
